@@ -1,8 +1,10 @@
+import com.jogamp.opengl.*;
+
 class Circunferencia extends FiguraGeometrica2D{
     private float raio;
 
-    public Circunferencia(Ponto2D ponto, float raio){
-        super(ponto);
+    public Circunferencia(Ponto2D pontos, float raio){
+        super(pontos);
         this.raio = raio;
     }
 

@@ -1,9 +1,8 @@
-import javax.media.opengl.GL2;
-import javax.media.opengl.GLAutoDrawable;
-import javax.media.opengl.GLCapabilities;
-import javax.media.opengl.GLEventListener;
-import javax.media.opengl.GLProfile;
-import javax.media.opengl.awt.GLCanvas;
+import com.jogamp.opengl.*;
+import com.jogamp.opengl.awt.GLCanvas;
+import com.jogamp.opengl.util.FPSAnimator;
+import javax.swing.*;
+import java.util.Arrays;
 
 import javax.swing.JFrame;
 
@@ -22,7 +21,6 @@ class Principal implements GLEventListener{
         final GL2 gl = drawable.getGL().getGL2();
 
         gl.glBegin(GL2.GL_LINES);
-        gl.glVertex3f();
         gl.glVertex2f();
         gl.glEnd();
     }
